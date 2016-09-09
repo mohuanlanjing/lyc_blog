@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ article.title }}</title>
+    {% load staticfiles %}
+    <link href="{% static "blog/css/article.css" %}" type="text/css" rel="stylesheet">
+</head>
+<body>
+    {% include "common/header.html" %}
+    <div class="article-main">
+
+        <div class="title">
+            {{ article.title }}
+        </div>
+        <div class="content">
+            {{ article.content|safe }}
+        </div>
+        <div class="container1">
+            <div class="time">
+               时间: {{ article.create_time|date:"Y-m-d H:i" }}
+            </div>
+        </div>
+        <div class="new-comment">
+{#            <form method="post" action="/article/api/add-comment">#}
+            <input type="hidden" name="article_id" value="{{ article.id }}">
+            <div>
+                昵称:<input name="name" type="text" class="new-comment-name" value="{{ view_user_name|default_if_none:"" }}">必填
+            </div>
+            <div>
+
+                邮箱:<input name="email" type="email" class="new-comment-email" value="{{ view_user_email|default:"" }}">选填, 有人回复您的评论将邮件通知您
+            </div>
+            <div class="comment-content">
+                <textarea name="content" class="new-comment-content"></textarea><button type="submit" class="add-comment-btn" article-id="{{ article.id }}">评论</button>
+            </div>
+{#            </form>#}
+        </div>
+        <div class="comments">
+            {% for comment in article.get_comments %}
+                <div class="comments-item" id="comment{{ comment.id }}" comment-id="{{ comment.id }}">
+                    <div class="comments-item-username">{{ comment.name }}</div>
+                    <div class="comments-item-time">{{ comment.create_time|date:"Y-m-d H:i:s" }}</div>
+                    <div class="comments-item-content">
+                        {% if comment.parent_comment %}
+                            @{{ comment.parent_comment.name }}:
+                        {% endif %}
+                        {{ comment.content }}
+                    </div>
+                    <div class="comments-item-reply"><a href="javascript:void(0)" show-reply=false>回复</a></div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+<script src="{% static "common/js/jquery.min.js" %}"></script>
+<script src="{% static "common/js/lycpost.js" %}"></script>
+<script src="{% static "blog/js/article.js" %}"></script>
+</body>
+</html>

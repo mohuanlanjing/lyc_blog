@@ -1,0 +1,47 @@
+
+.new-article-editor{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.new-article-editor .title{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 2rem;
+}
+.new-article-editor .title input{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid #e9f3f5;
+    border-radius: 10px;
+    padding: 0;
+}
+.new-article-editor .content{
+    margin-top: 1rem;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid #e1fdff;
+    border-radius: 10px;
+    height: 20rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.new-article-editor .action-btn
+{
+    padding: 0.5rem 1rem;
+    background: #73edf5;
+    width: 2rem;
+    margin-top: 1rem;
+    border-radius: 5px;
+    float: left;
+    margin-left: 2rem;
+    margin-right: auto;
+}
+
+.new-article-editor #preview-btn{
+    float: left;
+    margin-left: 0.5rem;
+}

@@ -1,0 +1,14 @@
+{% load staticfiles %}
+<link href="{% static "common/css/header.css" %}" type="text/css" rel="stylesheet">
+<div class="header">
+    <div class="header-item index"><a href="/">首页</a></div>
+    <div class="header-item login"><a href="/backend/">
+        {% if is_admin %}
+            后台管理
+        {% else %}
+        登录
+        {% endif %}
+    </a></div>
+</div>
+<script src="{% static "common/js/jquery.min.js" %}"></script>
+<script src="{% static "common/js/header.js" %}"></script>

@@ -1,0 +1,20 @@
+.header{
+    width: 80%;
+    margin-left: 10%;
+    background: white;
+    overflow: hidden;
+    height: 2rem;
+    border-radius: 5px;
+    border: 2px solid #e8f9f2;
+    box-shadow: 0px 2px 2px #cccccc;
+}
+.header .header-item{
+    float: left;
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+}
+.header-item a{
+    text-decoration: none;
+    /*color: #73edf5;*/
+    color: black;
+}

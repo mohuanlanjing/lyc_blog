@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    {% load staticfiles %}
+    <link href="{% static "blog/css/article-list.css" %}" type="text/css" rel="stylesheet">
+</head>
+<body>
+    {% include "common/header.html" %}
+    <div class="article-list">
+        {% for article in articles %}
+        <div class="article-list-item">
+            <div class="container1">
+                <div class="article-list-item-title">
+                    <a href="/article/{{ article.id }}">{{ article.title }}</a>
+                </div>
+                <div class="article-list-item-time">
+                    {{ article.create_time|date:"Y-m-d H:i" }}
+                </div>
+            </div>
+            <div class="article-list-item-content">
+                {{ article.preview|safe }}
+            </div>
+            <div class="container3">
+                <div class="views">
+                    浏览: {{ article.views_num }}
+                </div>
+                <div class="comments">
+                    评论: {{ article.comments.count }}
+                </div>
+                {% if is_admin %}
+                <div class="edit">
+                    <a href="/backend/edit-article/{{ article.id }}">编辑</a>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+    <div class="self">
+        <div class="self-title">
+            本博客介绍
+        </div>
+        <div class="self-content">
+            <p>本博客网站采用django搭建, 于2016年07月18日上线。</p>
+            <p>之前一直使用emlog博客, 但是并不是自己完完全全亲手所写的, 心里不太舒服,</p>
+            <p>而写一个博客网站也正是考验一个web开发者的基本功, 所以这个博客就诞生了。</p>
+            <p>总共呢。。。耗时三天就完成了吧。</p>
+            <p>关于博主</p>
+            <p>7年python学习使用经验, 一年工作经验, 其他的保持神秘</p>
+        </div>
+    </div>
+
+<script src="{% static "common/js/jquery.min.js" %}"></script>
+<script src="{% static "blog/js/article-list.js" %}"></script>
+</body>
+</html>
