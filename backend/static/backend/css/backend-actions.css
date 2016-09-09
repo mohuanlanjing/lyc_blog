@@ -1,11 +1,13 @@
 
 .action-list{
+    position: fixed;
     background: white;
     border-radius: 5px;
     width: 100px;
     font-size: 0.8rem;
     border: 1px solid #cccccc;
     float: left;
+    height: 98%;
 }
 
 .action-list ul{
