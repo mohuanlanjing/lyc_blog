@@ -20,7 +20,7 @@ class BackendAuthJsonApiView(View):
 
     def dispatch(self, request, *args, **kwargs):
         if not request.user.is_authenticated() or not request.user.is_admin:
-            res = codedesc.NOT_LOGIN
+            res = codedesc.NOT_LOGIN.copy()
             return JsonResponse(res)
         return super(BackendAuthJsonApiView, self).dispatch(request, *args, **kwargs)
 

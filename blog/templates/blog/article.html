@@ -17,8 +17,11 @@
             {{ article.content|safe }}
         </div>
         <div class="container1">
-            <div class="time">
-               时间: {{ article.create_time|date:"Y-m-d H:i" }}
+            <div class="create-time">
+                创建时间: {{ article.create_time|date:"Y-m-d H:i" }}
+            </div>
+            <div class="update-time">
+{#                最后更新时间: {{ article.update_time|date:"Y-m-d H:i" }}#}
             </div>
         </div>
         <div class="new-comment">

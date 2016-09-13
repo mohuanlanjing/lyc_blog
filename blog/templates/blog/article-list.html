@@ -44,16 +44,19 @@
             本博客介绍
         </div>
         <div class="self-content">
+            <p>呜喵王的技术博客, 记录一些编程或其他计算机技术笔记</p>
             <p>本博客网站采用django搭建, 于2016年07月18日上线。</p>
-            <p>之前一直使用emlog博客, 但是并不是自己完完全全亲手所写的, 心里不太舒服,</p>
-            <p>而写一个博客网站也正是考验一个web开发者的基本功, 所以这个博客就诞生了。</p>
-            <p>总共呢。。。耗时三天就完成了吧。</p>
-            <p>关于博主</p>
-            <p>7年python学习使用经验, 一年工作经验, 其他的保持神秘</p>
+            <p>目前已经运行了<span class="run-day"></span>天</p>
         </div>
     </div>
 
 <script src="{% static "common/js/jquery.min.js" %}"></script>
 <script src="{% static "blog/js/article-list.js" %}"></script>
+<script>
+    var startDay = new Date(2016, 6, 18);
+    var today = new Date();
+    var runDay = (today - startDay) / (24 * 60 * 60 * 1000);
+    $(".run-day").text(parseInt(runDay));
+</script>
 </body>
 </html>

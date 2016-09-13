@@ -32,6 +32,15 @@ body{
     border-top: 1px dotted #cccccc;
     padding-top: 0.5rem;
     padding-bottom: 1rem;
+    overflow: hidden;
+}
+
+.create-time{
+    float: left;
+}
+.update-time{
+    float: right;
+    margin-right: 1rem;
 }
 
 .new-comment, ._new-comment{

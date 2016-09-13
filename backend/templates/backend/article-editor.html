@@ -20,10 +20,10 @@
             {{ article.content|safe }}
         </div>
         {% if new %}
-            <div class="action-btn" id="new-btn">发布</div>
+            <a class="action-btn" id="new-btn" href="javascript:void(0)">发布</a>
         {% else %}
-            <div class="action-btn" id="save-btn" article-id="{{ article.id }}">保存</div>
-            <div class="action-btn" id="preview-btn" article-id="{{ article.id }}">预览</div>
+            <a class="action-btn" id="save-btn" article-id="{{ article.id }}" href="javascript:void(0)">保存</a>
+            <a class="action-btn" id="preview-btn" article-id="{{ article.id }}" href="javascript:void(0)">预览</a>
         {% endif %}
     </div>
 

@@ -20,7 +20,7 @@ class Article(models.Model):
     category = models.ForeignKey(ArticleCategory, null=True, blank=True)
     views_num = models.IntegerField(default=0)  # 点击浏览次数
     create_time = models.DateTimeField(auto_now_add=True)
-    update_time = models.DateTimeField(auto_now=True)
+    update_time = models.DateTimeField(null=True)
 
     def __unicode__(self):
         return u"%s %s" % (self.title, timezone.make_naive(self.create_time))
