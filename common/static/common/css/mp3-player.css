@@ -1,0 +1,71 @@
+#mp3-player{
+    position: fixed;
+    right: -9rem;
+    bottom: 5rem;
+    width: 10rem;
+    height: 55px;
+    border-radius: 0.4rem;
+    /*background: #5d6465;*/
+    background: #de8ed9;
+}
+
+.song-title{
+    margin-top: 0.3rem;
+    text-align: center;
+    font-size: 0.8em;
+    color: whitesmoke;
+    display: none;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.controls{
+    overflow: hidden;
+    text-align: center;
+    width: 100px;
+    margin: auto;
+    display: none;
+}
+.last-btn, .play-btn, .next-btn, .pause-btn, .hide-title{
+    background: url("../img/playbar.png");
+}
+.controls a{
+    float: left;
+    display: block;
+}
+.last-btn{
+    background-position: 0 -130px;
+    margin-top: 5px;
+    width: 28px;
+    height: 28px;
+}
+.next-btn{
+    background-position: -233px -130px;
+    margin-top: 5px;
+    width: 28px;
+    height: 28px;
+}
+.play-btn{
+    width: 36px;
+    height: 36px;
+    background-position: -40px -204px;
+    margin-right: 4px;
+    margin-left: 4px;
+    display: block;
+}
+.pause-btn{
+    width: 36px;
+    height: 36px;
+    background-position: -0px -165px;
+    margin-right: 4px;
+    margin-left: 4px;
+    display: none;
+}
+
+.hide-title{
+    /*letter-spacing: 40px;*/
+    width: 55px;
+    height: 83px;
+    display: none;
+}

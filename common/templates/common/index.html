@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load staticfiles%}
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="{% static "common/css/index.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static "common/css/mp3-player.css" %}">
+</head>
+<body>
+    <iframe src="/articles" id="content"></iframe>
+    <script src="{% static "common/js/jquery.min.js" %}"></script>
+    <script src="{% static "common/js/mp3-player.js" %}"></script>
+    <script>
+        var mp3Player =  initPlayer();
+        var playList = [
+            {title: "一个人 - 夏婉安", src: "http://oez1k3vco.bkt.clouddn.com/media/audio/一个人.mp3" },
+            {title: "Mr.Music", src: "http://oez1k3vco.bkt.clouddn.com/media/audio/Mr.Music.mp3"},
+            {title: "PneumaticTokyo", src: "http://oez1k3vco.bkt.clouddn.com/media/audio/PneumaticTokyo.mp3"}
+        ];
+        mp3Player.setPlayList(playList);
+        mp3Player.enableRandom(true);
+        mp3Player.play();
+    </script>
+</body>
+</html>
