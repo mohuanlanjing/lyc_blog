@@ -1,4 +1,4 @@
-# 自己的blog
+# lyc_blog
 
 django程序
 
