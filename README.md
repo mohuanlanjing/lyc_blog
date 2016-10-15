@@ -17,3 +17,9 @@ django程序博客
 
     python manage.py createsuperuser
     
+
+# 运行
+    
+    python manage.py runserver 0.0.0.0:8000
+
+浏览器访问`http://localhost:8000`
