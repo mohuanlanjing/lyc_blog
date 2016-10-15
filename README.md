@@ -8,6 +8,18 @@ django程序博客
 
 # 安装
 
+## 第三方依赖库
+
+pillow
+
+windows和mac:
+
+    pip install Pillow
+
+debian:
+    
+    sudo apt-get install python-pil
+
 初始化数据库: 
 
     python manage.py makemigrations
