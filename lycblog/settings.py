@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'blog',
     'common',
     'backend',
+    'images',
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -126,5 +127,7 @@ USE_TZ = True
 STATIC_ROOT = 'static'
 STATIC_URL = '/static/'
 
+MEDIA_ROOT = "media"
+MEDIA_URL = "/media/"
 
 AUTH_USER_MODEL = "account.MyUser"

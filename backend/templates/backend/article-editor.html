@@ -9,6 +9,7 @@
     {% endif %}
     {% load staticfiles %}
     <link href="{% static "backend/css/article-editor.css" %}" type="text/css" rel="stylesheet">
+    <link href="{% static "lyc-plugins/lyc-img-manager/css/lyc-img-manager.css" %}" type="text/css" rel="stylesheet">
 </head>
 <body>
     {% include "backend/backend-actions.html" %}
@@ -29,6 +30,8 @@
 
 <script src="{% static "common/js/jquery.min.js"%}"></script>
 <script src="{% static "common/js/lycpost.js"%}"></script>
+<script src="{% static "lyc-plugins/lyc-img-manager/js/lyc-img-manager.js"%}"></script>
+<script src="{% static "lyc-plugins/lyc-editor/js/lyc-editor.js"%}"></script>
 <script src="{% static "backend/js/article-editor.js"%}"></script>
 </body>
 </html>

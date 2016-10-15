@@ -1,31 +1,32 @@
 
 .new-article-editor{
     width: 70%;
+    margin-top: 2rem;
     margin-left: auto;
     margin-right: auto;
+    overflow: hidden;
 }
 .new-article-editor .title{
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    height: 2rem;
+    width: 600px;
+}
+.new-article-editor .title input, .new-article-editor .content{
+
+    border: 1px solid #cccccc;
 }
 .new-article-editor .title input{
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    border: 5px solid #e9f3f5;
-    border-radius: 10px;
+    border-radius: 2px;
     padding: 0;
+    outline: none;
 }
 .new-article-editor .content{
-    margin-top: 1rem;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    border: 1px solid #595cff;
+    margin-top: 0.5rem;
+    width: 600px;
     /*border: none;*/
-    border-radius: 10px;
+    border-radius: 2px;
+    outline: none;
     height: 20rem;
     overflow-y: auto;
     overflow-x: hidden;
@@ -38,7 +39,6 @@
     margin-top: 1rem;
     border-radius: 5px;
     float: left;
-    margin-left: 2rem;
     margin-right: auto;
     text-decoration: none;
     color: white;
@@ -47,4 +47,8 @@
 .new-article-editor #preview-btn{
     float: left;
     margin-left: 0.5rem;
+}
+
+.new-article-editor .content img{
+    padding: 0.2rem;
 }

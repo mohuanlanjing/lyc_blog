@@ -1,0 +1,24 @@
+<div class="lyc-image-upload">
+    <div class="upload-header">
+        <div class="upload-title">上传图片</div>
+        <div class="upload-btn-cancel"><a href="javascript:void(0);">X</a></div>
+    </div>
+    <form class="upload-content" enctype="multipart/form-data" method="post" action="/images/upload">
+        <div class="upload-item">
+            <label class="upload-item-name">网络图片URL:</label>
+            <input class="upload-out-url" type="url" name="url">
+        </div>
+
+        <div class="upload-item">
+            <label class="upload-item-name">本地图片:</label>
+            <input id="image-file" name="file" type="file" accept="image/*" />
+        </div>
+        <div class="upload-item">
+            <label class="upload-item-name">图片名字:</label>
+            <input class="upload-name" name="name">
+        </div>
+    </form>
+    <div class="upload-footer">
+        <div class="upload-btn-ok"><a href="javascript:void(0);">上传</a></div>
+    </div>
+</div>

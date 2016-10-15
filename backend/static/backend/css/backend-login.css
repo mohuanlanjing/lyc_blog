@@ -1,0 +1,47 @@
+
+body{
+    background: #f8f8f8;
+}
+input{
+    width: 70%;
+}
+.error{
+    text-align: center;
+    margin-top: 1rem;
+    color: red;
+}
+.login-window{
+    background: white;
+    width: 30rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4rem;
+    text-align: center;
+    border-radius: 0.3rem;
+    padding-bottom: 2rem;
+}
+
+.header{
+    border-radius: 0.3rem;
+    padding: 0.2rem 0;
+    background: #7294ff;
+    color: whitesmoke;
+
+}
+.username{
+    margin-top: 1rem;
+}
+.password{
+    margin-top: 0.5rem;
+}
+.ok-btn{
+    margin-top: 1rem;
+    background: #64D22D;
+    color: white;
+    width: 60%;
+    padding: 0.3rem 0;
+    margin-right: auto;
+    margin-left: auto;
+    border: none;
+    border-radius: 0.3rem;
+}

@@ -1,0 +1,138 @@
+.lyc-image-manager-zz{
+    width: 100%;
+    height: 100%;
+    background: rgba(214, 214, 214, 0.85);
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: none;
+}
+
+.lyc-image-selector{
+    width: 70%;
+    position: fixed;
+    top: 3rem;
+    left: 15%;
+    background: white;
+    overflow: hidden;
+    display: none;
+}
+.lyc-image-selector .btn-cancel a{
+    text-decoration: none;
+    color: #9C9C9C;
+}
+
+.lyc-image-selector .header{
+    overflow: hidden;
+    margin-top: 0.5rem;
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 0.5rem;
+}
+.lyc-image-selector .header .title{
+    float: left;
+    margin-left: 1rem;
+}
+.lyc-image-selector .header .search{
+    float: right;
+    margin-right: 2rem;
+}
+.lyc-image-selector .header .btn-cancel{
+    float: right;
+    margin-right: 0.5rem;
+    font-size: 2em;
+    color: #9C9C9C;
+}
+.lyc-image-selector .content2{
+    overflow: hidden;
+}
+.lyc-image-selector .categories{
+    background: #f2f2f2;
+    width: 15%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    float: left;
+    height: 30rem;
+    overflow-y: scroll;
+    border-right: 1px solid #f2f2f2;
+}
+.lyc-image-selector .category{
+    background: white;
+    font-size: 0.8rem;
+    padding: 0.6rem 0 0.6rem 1rem;
+}
+.lyc-image-selector .images{
+    float: right;
+    padding-bottom: 1rem;
+    width: 83%;
+}
+
+.lyc-image-selector .images-footer{
+    padding-top: 0.5rem;
+    border-top: 1px solid #f2f2f2;
+    margin-top: 1rem;
+}
+
+.lyc-image-selector .images-footer a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.lyc-image-selector .btn-upload, .lyc-image-selector .btn-del{
+    background: #77d243;
+    width: 4rem;
+    font-size: 0.8rem;
+    color: white;
+    padding: 0.4rem 0.5rem;
+    border-radius: 0.3rem;
+    float: left;
+    margin-left: 1rem;
+    text-align: center;
+}
+
+.lyc-image-selector .btn-del{
+    background: red;
+}
+
+.lyc-image-selector .images-content{
+    overflow-y: scroll;
+    height: 25rem;
+}
+.lyc-image-selector .images-content img{
+    width: 9rem;
+    height: 7rem;
+    /*float: left;*/
+    display: block;
+}
+
+.lyc-image-selector .footer{
+    border-top: 1px solid #f2f2f2;
+    padding-top: 1rem;
+}
+.lyc-image-selector .footer .btn-ok{
+    width: 5rem;
+    margin: 1rem auto ;
+    padding: 0.4rem 0.5rem;
+    border-radius: 0.3rem;
+    background: #77d243;
+    color: white;
+    text-align: center;
+}
+
+.lyc-image-selector .img-group{
+    overflow: hidden;
+    width: 9rem;
+    float: left;
+    margin-left: 0.2rem;
+    margin-top: 0.4rem;
+    border: 2px solid white;
+    border-radius: 0.2rem;
+}
+.lyc-image-selector .img-name{
+    text-align: center;
+    height: 3rem;
+}
+
+.lyc-image-selector .images-content .img-group[selected=selected]{
+    border: 2px solid #ff5f0d;
+}

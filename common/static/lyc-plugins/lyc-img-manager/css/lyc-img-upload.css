@@ -1,0 +1,67 @@
+.lyc-image-upload{
+    position: fixed;
+    top: 2rem;
+    width: 70%;
+    left: 15%;
+    background: white;
+    display: none;
+}
+.lyc-image-upload .upload-header{
+    overflow: hidden;
+    border-bottom: 1px solid #f2f2f2;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+}
+.lyc-image-upload .upload-header .upload-title{
+    float: left;
+    margin-left: 1rem;
+}
+
+.lyc-image-upload .upload-header .upload-btn-cancel{
+    float: right;
+    margin-right: 0.5rem;
+    font-size: 2rem;
+    color: #f2f2f2;
+}
+
+.lyc-image-upload .upload-btn-cancel a{
+    text-decoration: none;
+    color: #9C9C9C;
+}
+
+.lyc-image-upload .upload-content{
+    padding-bottom: 1rem;
+}
+
+.lyc-image-upload .upload-content .upload-item{
+    margin-top: 0.5rem;
+}
+.lyc-image-upload .upload-item .upload-item-name{
+    float: left;
+    width: 8rem;
+    text-align: right;
+}
+.lyc-image-upload .upload-item input{
+    margin-left: 1rem;
+}
+.lyc-image-upload .upload-item .upload-out-url{
+    width: 20rem;
+}
+
+.lyc-image-upload .upload-footer{
+    padding-top: 1rem;
+    border-top: 1rem;
+    border-top: 1px solid #f2f2f2;
+}
+
+.lyc-image-upload .upload-footer .upload-btn-ok{
+    background: #77d243;
+    border-radius: 0.3rem;
+    padding: 0.3rem 0.5rem;
+    margin: 1rem auto;
+    text-align: center;
+    width: 40%;
+}
+.lyc-image-upload .upload-btn-ok a{
+    color: white;
+}

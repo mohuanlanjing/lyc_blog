@@ -28,7 +28,7 @@
     display: none;
 }
 .last-btn, .play-btn, .next-btn, .pause-btn, .hide-title{
-    background: url("../img/playbar.png");
+    background: url("../../../common/img/playbar.png");
 }
 .controls a{
     float: left;

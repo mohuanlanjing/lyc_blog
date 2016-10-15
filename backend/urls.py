@@ -8,4 +8,5 @@ urlpatterns = [
     url(r"^edit-article/(?P<article_id>\d+)", EditArticleView.as_view()),
     url(r"^api/edit-article$", EditArticleJsonApiView.as_view()),
     url(r"^$", MainView.as_view()),
+    url(r"^login$", BackendLoginView.as_view()),
 ]
