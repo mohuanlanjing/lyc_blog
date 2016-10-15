@@ -1,6 +1,10 @@
 # lyc_blog
 
-django程序
+django程序博客
+
+
+[演示地址](http://home.wumiao.wang:8001)
+
 
 # 安装
 
